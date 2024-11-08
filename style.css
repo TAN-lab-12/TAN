@@ -113,3 +113,140 @@ nav a:hover {
     background: linear-gradient(45deg, #FFD700, #FF6B6B);
     transform: scale(1.05);
 }
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f3f4f6;
+}
+
+header {
+    background: linear-gradient(90deg, #4CAF50, #00C6FF);
+    color: #fff;
+    padding: 1.5em;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+header a {
+    color: #fff;
+    margin-top: 1em;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* About Section */
+.about-section {
+    text-align: center;
+    padding: 2em;
+    background: linear-gradient(135deg, #FFDDC1, #FFF3B0);
+    border-radius: 10px;
+    width: 80%;
+    margin: 2em auto;
+    color: #333;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.about-section h2 {
+    color: #FF6B6B;
+    font-size: 1.8em;
+    margin-top: 0;
+}
+
+/* Team Section */
+.team-section {
+    display: flex;
+    justify-content: space-around;
+    gap: 1em;
+    margin: 2em 0;
+}
+
+.team-member {
+    background: #ffffff;
+    padding: 1.5em;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    text-align: center;
+}
+
+.team-member h3 {
+    font-size: 1.3em;
+    color: #4CAF50;
+    margin-bottom: 0.5em;
+}
+
+.team-member p {
+    font-size: 0.9em;
+    color: #666;
+    font-weight: bold;
+}
+
+
+/* Login Page Styles */
+.login-section {
+    text-align: center;
+    padding: 3em;
+    background: linear-gradient(135deg, #8EC5FC, #E0C3FC);
+    border-radius: 10px;
+    width: 60%;
+    margin: 3em auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    color: #333;
+}
+
+.login-section h2 {
+    color: #4CAF50;
+    font-size: 1.8em;
+    margin-bottom: 1em;
+}
+
+.login-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-section input {
+    padding: 0.8em;
+    margin: 0.5em 0;
+    width: 80%;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.login-section button {
+    padding: 0.8em;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 80%;
+    margin-top: 1em;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.login-section button:hover {
+    background-color: #3e8e41;
+}
+
+.login-section p {
+    margin-top: 1em;
+}
+
+.login-section a {
+    color: #FF6B6B;
+    text-decoration: none;
+    font-weight: bold;
+}
