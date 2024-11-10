@@ -3,27 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tan - Home</title>
+    <title>Tan - Product Search</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script> <!-- Link to the JavaScript file -->
 </head>
 <body>
     <header>
-        <h1>Welcome to Tan</h1>
+        <h1>Tan Store</h1>
         <nav>
             <a href="index.html">Home</a>
             <a href="aboutus.html">About Us</a>
-            <a href="login.html">Login</a>
             <a href="signup.html">Sign Up</a>
         </nav>
     </header>
+
+    <!-- Home Section -->
     <section class="home-section">
-        <h2>Your trusted platform for comparing e-commerce reviews and prices</h2>
-        <p>Explore the best deals, read genuine reviews, and make smarter shopping choices with Tan.</p>
+        <h2>Welcome to Tan Store</h2>
+
         <!-- Search Bar -->
-        <form class="search-bar" action="search_results.html" method="GET">
-            <input type="text" placeholder="Search for products..." name="query" required>
-            <button type="submit">Search</button>
-        </form>
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Search products...">
+            <button id="search-button">Search</button>
+        </div>
     </section>
+
+    <!-- Products Section -->
+    <section class="results-section" id="results-section">
+        <!-- Products will be dynamically added here -->
+    </section>
+
 </body>
 </html>
