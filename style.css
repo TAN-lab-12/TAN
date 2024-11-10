@@ -84,7 +84,7 @@ nav a:hover {
 
 .search-bar button:hover {
     background-color: #50C878;
-    transform: scale(1.1); /* Zooms in the button */
+    transform: scale(1.1); /* Zoom effect */
 }
 
 /* About Section */
@@ -193,7 +193,7 @@ button {
 
 button:hover {
     background-color: #50C878;
-    transform: scale(1.1); /* Zooms in the button */
+    transform: scale(1.1); /* Zoom effect */
 }
 
 /* Product Results Section */
@@ -236,5 +236,5 @@ button:hover {
 
 .product button:hover {
     background-color: #4A90E2;
-    transform: scale(1.1); /* Zooms in the button */
+    transform: scale(1.1); /* Zoom effect */
 }
