@@ -1,23 +1,23 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     color: #333;
-    background-color: #f3f4f6;
+    background-color: #f8f9fa;
 }
 
 header {
-    background: linear-gradient(90deg, #4CAF50, #00C6FF);
+    background: linear-gradient(90deg, #4A90E2, #50C878);
     color: #fff;
-    padding: 1.5em;
+    padding: 2em;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
     margin: 0;
-    font-size: 2em;
+    font-size: 2.5em;
 }
 
 nav {
@@ -29,41 +29,87 @@ nav a {
     margin: 0 1em;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #FFE57F;
 }
 
 /* Home Section */
 .home-section {
     text-align: center;
-    padding: 3em;
-    background: linear-gradient(135deg, #E0F7FA, #FFF3E0);
+    padding: 3em 1em;
+    background: linear-gradient(135deg, #E3F2FD, #E8F5E9);
     border-radius: 10px;
     margin: 2em auto;
     width: 80%;
+    max-width: 900px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.home-section h2 {
+    color: #4A90E2;
+    font-size: 2em;
+    margin-top: 0;
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5em;
+}
+
+.search-bar input {
+    width: 70%;
+    max-width: 500px;
+    padding: 0.8em;
+    border: 2px solid #4A90E2;
+    border-radius: 8px 0 0 8px;
+    font-size: 1em;
+}
+
+.search-bar button {
+    padding: 0.8em 1em;
+    background-color: #4A90E2;
+    color: #fff;
+    border: none;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-bar button:hover {
+    background-color: #50C878;
 }
 
 /* About Section */
 .about-section {
     text-align: center;
-    padding: 2em;
-    background: linear-gradient(135deg, #FFDDC1, #FFF3B0);
+    padding: 2em 1em;
+    background: linear-gradient(135deg, #FFEBEE, #FFF3E0);
     border-radius: 10px;
     width: 80%;
+    max-width: 900px;
     margin: 2em auto;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .about-section h2 {
     color: #FF6B6B;
-    font-size: 1.8em;
+    font-size: 2em;
     margin-top: 0;
 }
 
 .team-section {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
-    gap: 1em;
-    margin: 2em 0;
+    gap: 1.5em;
+    margin-top: 2em;
 }
 
 .team-member {
@@ -71,45 +117,47 @@ nav a {
     padding: 1.5em;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 200px;
+    width: 250px;
     text-align: center;
 }
 
 .team-member h3 {
-    font-size: 1.3em;
-    color: #4CAF50;
+    font-size: 1.5em;
+    color: #4A90E2;
     margin-bottom: 0.5em;
 }
 
 .team-member p {
-    font-size: 0.9em;
+    font-size: 1em;
     color: #666;
     font-weight: bold;
 }
 
 .contact-info {
     background-color: #ffffff;
-    padding: 1em;
+    padding: 1.5em;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 60%;
+    width: 70%;
+    max-width: 800px;
     margin: 2em auto;
 }
 
 /* Login and Sign Up Sections */
 .login-section, .signup-section {
     text-align: center;
-    padding: 3em;
+    padding: 3em 1em;
     background: linear-gradient(135deg, #8EC5FC, #E0C3FC);
     border-radius: 10px;
-    width: 60%;
+    width: 80%;
+    max-width: 500px;
     margin: 3em auto;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .login-section h2, .signup-section h2 {
     color: #4CAF50;
-    font-size: 1.8em;
+    font-size: 2em;
     margin-bottom: 1em;
 }
 
@@ -122,15 +170,17 @@ form {
 input {
     padding: 0.8em;
     margin: 0.5em 0;
-    width: 80%;
+    width: 90%;
+    max-width: 400px;
     border-radius: 5px;
     border: 1px solid #ddd;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 1em;
 }
 
 button {
-    padding: 0.8em;
-    background-color: #4CAF50;
+    padding: 0.8em 1.5em;
+    background-color: #4A90E2;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -141,6 +191,32 @@ button {
 }
 
 button:hover {
-    background-color: #45A049;
+    background-color: #50C878;
 }
 
+/* Product Results Section */
+.results-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+    padding: 2em;
+    width: 80%;
+    margin: 2em auto;
+    max-width: 1200px;
+}
+
+.product {
+    background-color: #ffffff;
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    text-align: center;
+}
+
+.product img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 1em;
+}
