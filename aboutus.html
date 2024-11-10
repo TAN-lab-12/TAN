@@ -3,42 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tan - About Us</title>
+    <title>Tan - Product Search</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script> <!-- Link to the JavaScript file -->
 </head>
 <body>
     <header>
-        <h1>About Tan</h1>
+        <h1>Tan Store</h1>
         <nav>
             <a href="index.html">Home</a>
-            <a href="login.html">Login</a>
+            <a href="aboutus.html">About Us</a>
             <a href="signup.html">Sign Up</a>
         </nav>
     </header>
-    <section class="about-section">
-        <h2>Our Mission</h2>
-        <p>At Tan, our mission is to help users make informed shopping decisions by comparing prices and reviews across various e-commerce platforms.</p>
 
-        <div class="team-section">
-            <h2>Meet the Team</h2>
-            <div class="team-member">
-                <h3>TEJPRANEETH</h3>
-                <p>CEO & Founder</p>
-            </div>
-            <div class="team-member">
-                <h3>NIKHIL</h3>
-                <p>Lead Developer</p>
-            </div>
-            <div class="team-member">
-                <h3>ABHISHEK</h3>
-                <p>Marketing Manager</p>
-            </div>
-        </div>
+    <!-- Home Section -->
+    <section class="home-section">
+        <h2>Welcome to Tan Store</h2>
 
-        <div class="contact-info">
-            <h2>Contact Us</h2>
-            <p>Email: tan@gmail.com</p>
+        <!-- Search Bar -->
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Search products...">
+            <button id="search-button">Search</button>
         </div>
     </section>
+
+    <!-- Products Section -->
+    <section class="results-section" id="results-section">
+        <!-- Products will be dynamically added here -->
+    </section>
+
 </body>
 </html>
